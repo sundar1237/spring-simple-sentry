@@ -1,0 +1,86 @@
+artifactory:
+    proxy:
+        host: serverproxy.corproot.net
+        port: 8079
+configuration:
+    classpath:
+        static: classpath:/static/
+ctfUrl: https://syteauto01.corproot.net:9090
+deviceEmulator:
+    objectId: 9145022050213392332
+getEnvironmentByRest: renvironment/
+logging:
+    file: logs/dock-local-sundar.log
+    level:
+        com:
+            sc: INFO
+            swisscom:
+                o2a:
+                    netcracker:
+                        autotest:
+                            web: INFO
+        org:
+            hibernate: ERROR
+            springframework:
+                web: ERROR
+        root: INFO
+
+management:
+    endpoint:
+        health:
+            show-details: always
+        metrics:
+            enabled: true
+        prometheus:
+            enabled: true
+        shutdown:
+            enabled: true
+    endpoints:
+        jmx:
+            exposure:
+                include: '*'
+        web:
+            exposure:
+                include: '*'
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+org:
+    quartz:
+        jobStore:
+            class: org.quartz.simpl.RAMJobStore
+remote:
+    webdriver:
+        url: http://10.144.104.193:4444/wd/hub
+        #url: http://localhost:4444/wd/hub
+sail:
+    NetCracker-CIA:
+        token: Basic bmV0Y3JhY2tlci1jaWEtamFzbzN1a2RyNDpqRzZLYVVxRnRuJCpNdnA0cGNVSg==
+    NetCracker-FUF:
+        token: Basic bmV0Y3JhY2tlcmZ1Zi1kdXd4aDFvam5iOiFqK0oyRmtvLSFoKm1ndnJnVk1O
+    SPT-IL:
+        token: Basic c3B0LWlsLWhkZWdlaWhpZXA6MUxITmU1MjM3Y2hIb0RxT1M2Kjk=
+    url: https://sail-server.scapp-corp.swisscom.com/sail/api/
+server:
+    dnsName: localhost
+    error:
+        whitelabel:
+            enabled: false
+    port: 8097
+    servlet:
+        session:
+            timeout: 240m
+spring:
+    mail:
+        host: sysmail.swisscom.com
+        port: 25
+    main:
+        allow-bean-definition-overriding: true
+    servlet:
+        multipart:
+            max-file-size: 128000KB
+            max-request-size: 128000KB
+webDriverPath: docs/webdriver/chromedriver.exe
+sentry:
+    dsn: http://acdf2bbb14e64563a7eacc22e69548d5@10.144.108.22:9000/2

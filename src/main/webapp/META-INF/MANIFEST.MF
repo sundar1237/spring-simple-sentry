@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: web
+Implementation-Version: 1.0
+Built-By: tgdnasu3
+Specification-Vendor: Pivotal Software, Inc.
+Specification-Title: web
+Implementation-Vendor-Id: com.swisscom.autotest.netcracker
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_121
+Specification-Version: 1.0
+Implementation-URL: http://projects.spring.io/spring-boot/scs_autotest
+ /web/
+Implementation-Vendor: Pivotal Software, Inc.
+
